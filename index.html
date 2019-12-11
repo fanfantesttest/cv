@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>完了ページ設定デモ</title>
+</head>
+
+<body>
+  <p>ご購入頂きまして、まことにありがとうございました</p>
+  <span id="a8sales"></span>
+  <script src="//statics.a8.net/a8sales/a8sales.js"></script>
+  <script>
+    a8sales({
+      "pid": "s00000000062001",
+      "order_number": "order_1_1",
+      "currency": "JPY",
+      "items": [{
+        "code": "item1",
+        "price": 200,
+        "quantity": 2
+      }],
+      "total_price": 400
+    });
+  </script>
+</body>
+</html>
